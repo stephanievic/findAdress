@@ -1,3 +1,4 @@
+const inputCep = document.querySelector("#input-cep");
 const searchBtn = document.querySelector(".search-btn");
 
 //fazer verificações do cep
@@ -52,7 +53,15 @@ function mostrarEndereco (dados) {
 searchBtn.addEventListener("click", (e) => {
     e.preventDefault();
 
-    let cep = document.querySelector("#input-cep").value;
+    let cep = inputCep.value;
 
     verificaCEP(cep);
+});
+
+inputCep.addEventListener("keypress", (e) => {
+    if (e.code === "Enter") {
+        const cep = e.target.value;
+        
+        verificaCEP(cep);
+    }
 })
