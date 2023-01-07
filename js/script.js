@@ -34,7 +34,7 @@ function mostrarEndereco (dados) {
     let divEndereco = document.querySelector(".result-adress");
 
     if (dados.erro){
-        divEndereco.innerHTML = "<p><strong>Não foi possivel encontrar este CEP.</strong></p>"
+        divEndereco.innerHTML = `<p><strong>Não foi possivel encontrar este CEP: ${inputCep.value}.</strong></p>`
         divEndereco.style.color = "#3c4e3c";
     }
 
