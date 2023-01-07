@@ -4,15 +4,11 @@
     box-sizing: border-box;
 }
 
-
 body {
     height: 100vh;
-
     display: flex;
-    
     align-items: center;
     justify-content: center;
-
     background-image: radial-gradient(circle, #648c76, #6a917a, #71957d, #779a81, #7e9f85);
     font-family: Helvetica, sans-serif;
 }
@@ -20,7 +16,6 @@ body {
 .container {
     max-width: 90vw;
     padding: 30px;
-
     background-color: rgba(230, 245, 235, 0.89);
     border-radius: 5px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -28,9 +23,8 @@ body {
 
 .search-adress h1, .result-adress h2 {
     margin-bottom: 12px;
-
     color: #3c4e3c;
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
 }
