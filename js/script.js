@@ -5,12 +5,12 @@ const searchBtn = document.querySelector(".search-btn");
 function verificaCEP (cep){
     const cepValido = /^[0-9]{8}$/;
 
-    if (!cepValido.test(cep)){
-        alert("O CEP informado não é válido.");
+    if (cep == ""){
+        alert("Por favor, informe um CEP.");
     }
 
-    else if (cep == ""){
-        alert("Por favor, informe um CEP.");
+    else if (!cepValido.test(cep)){
+        alert("O CEP informado não é válido.");
     }
 
     else getViaCepAPI();
